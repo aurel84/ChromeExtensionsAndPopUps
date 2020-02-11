@@ -18,22 +18,25 @@ $chromeURL="[*.]"
 ### PSCustomObject to store data on forcelist, blacklist, and popups ###
 $extensionInstallForceList=@(
     
-    [pscustomobject]@{Name="1";ID=""},
-    # [pscustomobject]@{Name="2";ID=""};
+    [pscustomobject]@{Name="1";ID="PutYourExtensionIDGoesHere"}, # Go to https://chrome.google.com/webstore/category/extensions, look for extension and copy the ID quotations
+    # [pscustomobject]@{Name="2";ID=""}, # Commented out to show adding another extension as example
+    # [pscustomobject]@{Name="2";ID=""}; # Commented out to show adding another extension as example
 
 )
 
 $extensionInstallBlackList=@(
     
-    [pscustomobject]@{Name="1";ID=""},
-    # [pscustomobject]@{Name="2";ID=""};
+    [pscustomobject]@{Name="1";ID="PutYourExtensionIDGoesHere"},
+    # [pscustomobject]@{Name="2";ID=""}, # Commented out to show adding another extension as example
+    # [pscustomobject]@{Name="2";ID=""}; # Commented out to show adding another extension as example
 
 )
 
 $popUpsAndRedirects=@(
     
-    [pscustomobject]@{Name="1";ID=""},
-    # [pscustomobject]@{Name="2";ID=""};
+    [pscustomobject]@{Name="1";ID="PutYourAddressHere.com"}, # Get the website URL, place it here (ex: google.com)
+    # [pscustomobject]@{Name="2";ID=""}, # Commented out to show adding another extension as example
+    # [pscustomobject]@{Name="2";ID=""}; # Commented out to show adding another extension as example
 
 )
 
