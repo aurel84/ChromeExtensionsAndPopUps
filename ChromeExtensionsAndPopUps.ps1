@@ -16,15 +16,19 @@ $chromeExtForceInstallURL=("https://clients2.google.com/service/update2/crx")
 $chromeURL="[*.]" # Wildcard variable so that https, http, www., etc. parts of websites are all captured
 
 ### PSCustomObject to store data on forcelist, blacklist, and popups ###
+# Chrome Extension Force Install dataset
 $extensionInstallForceList=@(
     
+    # Chrome Extension Force Install 
     [pscustomobject]@{Name="1";ID="PutYourExtensionIDGoesHere"}, # Go to https://chrome.google.com/webstore/category/extensions, look for extension and copy the ID quotations
     # [pscustomobject]@{Name="2";ID=""}, # Commented out to show adding another extension as example
     # [pscustomobject]@{Name="2";ID=""}; # Commented out to show adding another extension as example
 
 )
 
+# Chrome Extension Blacklist 
 $extensionInstallBlackList=@(
+    
     
     [pscustomobject]@{Name="1";ID="PutYourExtensionIDGoesHere"},
     # [pscustomobject]@{Name="2";ID=""}, # Commented out to show adding another extension as example
@@ -32,6 +36,7 @@ $extensionInstallBlackList=@(
 
 )
 
+# Chrome PopUps and Redirects
 $popUpsAndRedirects=@(
     
     [pscustomobject]@{Name="1";ID="PutYourAddressHere.com"}, # Get the website URL, place it here (ex: google.com)
