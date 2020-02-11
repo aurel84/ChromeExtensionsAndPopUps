@@ -13,7 +13,7 @@ $logFile = (($env:computername | Select-Object) + "_" + "ChromeExtensionsForceIn
 
 ### Variables ###
 $chromeExtForceInstallURL=("https://clients2.google.com/service/update2/crx")
-$chromeURL="[*.]"
+$chromeURL="[*.]" # Wildcard variable so that https, http, www., etc. parts of websites are all captured
 
 ### PSCustomObject to store data on forcelist, blacklist, and popups ###
 $extensionInstallForceList=@(
