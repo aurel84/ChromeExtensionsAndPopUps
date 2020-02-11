@@ -8,7 +8,7 @@ an install log at C:\Temp\* for administrator to check verification.
 Ceated by John Hawkins | johnhawkins3d@gmail.com
 #>
 
-# get name of script and name structure of logfile that will be used to output to C:\Temp 
+### Logfile for script stored in C:\Temp\* ###
 $logFile = (($env:computername | Select-Object) + "_" + "ChromeExtensionsForceInstall" + "_" + (Get-Date -Format "MM_dd_yyyy"))
 
 ### Variables ###
