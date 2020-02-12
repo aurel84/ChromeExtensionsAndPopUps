@@ -13,6 +13,9 @@ $logFile = (($env:computername | Select-Object) + "_" + "ChromeExtensionsForceIn
 
 ### Variables ###
 $chromeExtForceInstallURL=("https://clients2.google.com/service/update2/crx")
+$pathToChromeExtInstallForceList=("HKLM:\SOFTWARE\Policies\Google\Chrome\ExtensionInstallForcelist")
+$pathToChromeExtInstallBlackList=("HKLM:\SOFTWARE\Policies\Google\Chrome\ExtensionInstallBlacklist")
+$pathToChromePopupsAllowedForUrls=("HKLM:\Software\Policies\Google\Chrome\PopupsAllowedForUrls")
 $chromeURL="[*.]" # Wildcard variable so that https, http, www., etc. parts of websites are all captured
 
 ### PSCustomObject to store data on forcelist, blacklist, and popups ###
@@ -55,21 +58,21 @@ if ( -not ( Test-Path -Path "HKLM:\Software\Policies\Google\Chrome" ) )   {
 } 
 
 ### Chrome Registry for Force Installing Extensions ###
-if ( -not ( Test-Path -Path "HKLM:\SOFTWARE\Policies\Google\Chrome\ExtensionInstallForcelist" ) ) {
+if ( -not ( Test-Path -Path "$pathToChromeExtInstallForceList" ) ) {
   
     New-Item -Path "HKLM:\Software\Policies\Google\Chrome" -Name "ExtensionInstallForcelist" –Force > $null
 
 }
 
 ### Chrome Registry for Blocking Extensions ###
-if ( -not ( Test-Path -Path "HKLM:\SOFTWARE\Policies\Google\Chrome\ExtensionInstallBlacklist" ) ) {
+if ( -not ( Test-Path -Path "$pathToChromeExtInstallBlackList" ) ) {
   
     New-Item -Path "HKLM:\Software\Policies\Google\Chrome" -Name "ExtensionInstallBlacklist" –Force > $null
 
 }
 
 ### Chrome Registry to Allow PopUps for URLS ###
-if ( -not ( Test-Path -Path "HKLM:\Software\Policies\Google\Chrome\PopupsAllowedForUrls" ) )  {
+if ( -not ( Test-Path -Path "$pathToChromePopupsAllowedForUrls" ) )  {
 
     New-Item -Path "HKLM:\Software\Policies\Google\Chrome" -Name "PopupsAllowedForUrls" –Force > $null
 
