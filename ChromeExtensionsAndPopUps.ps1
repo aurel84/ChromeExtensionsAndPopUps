@@ -21,7 +21,7 @@ $extensionInstallForceList=@(
     
     # Chrome Extension Force Install 
     [pscustomobject]@{Name="1";ID="PutYourExtensionIDGoesHere"}, # Go to https://chrome.google.com/webstore/category/extensions, look for extension and copy the ID quotations
-    [pscustomobject]@{Name="2";ID="AnotherExtensionIDGoesHere"}; # Close semi-colon insteado comma to end structure
+    [pscustomobject]@{Name="2";ID="AnotherExtensionIDGoesHere"}; # Close semi-colon instead of comma to end structure
 
 )
 
@@ -30,7 +30,7 @@ $extensionInstallBlackList=@(
     
     
     [pscustomobject]@{Name="1";ID="PutYourExtensionIDGoesHere"},
-    [pscustomobject]@{Name="2";ID="AnotherExtensionIDGoesHere"}; # Close semi-colon insteado comma to end structure
+    [pscustomobject]@{Name="2";ID="AnotherExtensionIDGoesHere"}; # Close semi-colon instead of comma to end structure
 
 )
 
@@ -38,7 +38,7 @@ $extensionInstallBlackList=@(
 $popUpsAndRedirects=@(
     
     [pscustomobject]@{Name="1";ID="PutYourAddressHere.com"}, # Get the website URL, place it here (ex: google.com)
-    [pscustomobject]@{Name="2";ID="AnotherAddressURLGoesHere"}; # Close semi-colon insteado comma to end structure
+    [pscustomobject]@{Name="2";ID="AnotherAddressURLGoesHere"}; # Close semi-colon instead of comma to end structure
 
 )
 
