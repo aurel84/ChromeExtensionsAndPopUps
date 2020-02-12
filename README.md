@@ -18,4 +18,6 @@
 
 A.) Run this locally, with adminstrator privalges.  When script is run, user is unable to remove Ext or change associated seettings unless they edit the registries.  
 
-B.) Run this with a Compuer Management SAAS.  For Example, in AirWatch:
+Or....
+
+B.)  Deploy the script through your Computer Management Software, for example in AirWAtch, this can be deployed with a product list that downloads and runs a file/action .ps1 script.  Per usual guidelines, consult your own software's guide and test thoroughly.  
