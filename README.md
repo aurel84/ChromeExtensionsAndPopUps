@@ -16,3 +16,6 @@
 
 ### DEPLOYING THE SCRIPT ###
 
+A.) Run this locally, with adminstrator privalges.  When script is run, user is unable to remove Ext or change associated seettings unless they edit the registries.  
+
+B.) Run this with a Compuer Management SAAS.  For Example, in AirWatch:
