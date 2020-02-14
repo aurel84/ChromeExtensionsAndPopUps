@@ -23,7 +23,7 @@ $chromeURL="[*.]" # Wildcard variable so that https, http, www., etc. parts of w
 $extensionInstallForceList=@(
     
     # Chrome Extension Force Install 
-    [pscustomobject]@{Name="1";ID="PutYourExtensionIDGoesHere"}, # Go to https://chrome.google.com/webstore/category/extensions, look for extension and copy the ID quotations
+    [pscustomobject]@{Name="1";ID="PutYourExtensionIDGoesHere"}, # Go to https://chrome.google.com/webstore/category/extensions, look for extension and copy the ID into the quotations
     [pscustomobject]@{Name="2";ID="AnotherExtensionIDGoesHere"}; # Close semi-colon instead of comma to end structure
 
 )
@@ -32,7 +32,7 @@ $extensionInstallForceList=@(
 $extensionInstallBlackList=@(
     
     
-    [pscustomobject]@{Name="1";ID="PutYourExtensionIDGoesHere"},
+    [pscustomobject]@{Name="1";ID="PutYourExtensionIDGoesHere"}, # Go to https://chrome.google.com/webstore/category/extensions, look for extension and copy the ID into the quotations
     [pscustomobject]@{Name="2";ID="AnotherExtensionIDGoesHere"}; # Close semi-colon instead of comma to end structure
 
 )
